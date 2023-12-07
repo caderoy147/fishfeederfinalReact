@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },"scripts": {
+    "start": "npm run server",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend/fishfeeder && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend/fishfeeder && npm run build"
+  }
+}
